@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>input的种用法</title>
+</head>
+<body>
+    <!--1.文本域type="text" -->
+   名称： <input type="text" value="" placeholder="请输入名称：" disabled="true"><br>
+    <!-- 2.密码type="password" -->
+    开机密码：<input type="password" value="wwww" readonly><br>
+    <!-- 3.单选按钮 type="radio" 根据name分组，name一致为同一题-->
+    <div>第一题.什么时候吃饭？(单选题）</div>
+    <input type="radio" name="time" value="早上" id="morning"><label for="morning">早上</label>
+    <input type="radio" name="time" value="中午" id="noon"><label for="noon">中午</label>
+    <input type="radio" name="time" value="晚上" id="night"><label for="night">晚上</label>
+    <div>2.几点起床？（单选题）</div>
+    <input type="radio" name="up" value="7" id="seven"><label for="seven">7点</label>
+    <input type="radio" name="up" value="8" id="eight"><label for="eight">8点</label>
+    <input type="radio" name="up" value="9" id="nine"><label for="nine">9点</label>
+    <!-- 4.多选（复选）框 type="checkbox"-->
+    <div>3.选什么菜?(多选）</div>
+    <input type="checkbox" name="cai" value="tudou" id="tudou"><label for="tudou">土豆</label><br>
+    <input type="checkbox" name="cai" value="xiangcai" id="xiangcai"><label for="xiangcai">香菜</label><br>
+    <input type="checkbox" name="cai" value="yangrou" id="yangrou"><label for="yangrou">羊肉</label><br>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width:400px;
+            margin:0 auto;
+        }
+        .box1{
+            float:left;
+        }
+        .box2{
+            float:right;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+            /* 为了防止出现意外 */
+            line-height: 0;
+            height: 0;
+            /* 隐藏元素 如果占有空间，那么空间还在 */
+            visibility: hidden;
+        }
+        .clearfix{
+            zoom: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box clearfix">
+        <div class="box1">左浮动</div>
+        <div class="box2">右浮动</div>
+    </div>
+    <div>不浮动</div>
+</body>
+</html>

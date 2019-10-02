@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1{
+            /*  没有设置宽度的情况下，
+            如果给该块元素设置margin值，
+            则块元素margin生效，
+            并 宽度=100%-左右margin */
+            margin:0 100px;
+        }
+        .father{
+            /* margin-top谁高谁说了算 */
+            margin-top:10px;
+            margin-left:30px;
+        }
+        .son{
+            margin-top:30px;
+            margin-left:30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 宽度问题 -->
+    <div class="box1">内容</div>
+    <!-- margin-top问题 -->
+    <div class="father">
+        <div class="son">子标签</div>
+    </div>
+</body>
+</html>

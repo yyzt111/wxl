@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .bg-color{
+            width:300px;
+            height:300px;
+            padding:20px;
+            margin:20px;
+            border:20px solid red;
+            background-color: #333;
+            /* box-sizing: border-box; */
+        }
+        .bg-img{
+            width:200px;
+            height:200px;
+            /* background: url('./imgs/icon_01.png'); */
+            /* background: url('./imgs/icon_01.png') repeat; */
+            background: url('./imgs/icon_01.png') no-repeat;
+            /* background: url('./imgs/icon_01.png') repeat-x; */
+            /* background: url('./imgs/icon_01.png') repeat-y; */
+            /* background-image: url('./imgs/icon_01.png'); */
+            background-position:10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1.背景颜色
+        background:#111111;
+        background-color:#111111;
+        background-color包括content和padding的颜色
+     -->
+    <div class="bg-color">背景颜色</div>
+    <!-- 
+        2.背景图片
+        background:url();
+        background-image:url() repeat;
+        background-repeat:repeat;
+        background-position:
+    -->
+    <div class="bg-img"></div>
+</body>
+</html>
